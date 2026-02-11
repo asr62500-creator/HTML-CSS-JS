@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- Declares HTML5 document -->
+
+<html>
+<head>
+    <title>Audio and Video All Attributes Example</title>
+</head>
+
+<body>
+
+    <h2>Audio Player</h2>
+
+    <audio controls autoplay loop muted preload="auto">
+    <!-- controls → shows play, pause buttons -->
+    <!-- autoplay → starts audio automatically -->
+    <!-- loop → repeats audio continuously -->
+    <!-- muted → starts audio without sound -->
+    <!-- preload="auto" → loads audio before user plays it -->
+
+        <source src="song.mp3" type="audio/mpeg">
+        <!-- Primary audio file -->
+
+        <source src="song.ogg" type="audio/ogg">
+        <!-- Backup audio file if first format not supported -->
+
+        Your browser does not support audio.
+        <!-- Message if browser does not support audio -->
+
+    </audio>
+
+    <hr>
+    <!-- Horizontal line separating audio and video -->
+
+    <h2>Video Player</h2>
+
+    <video width="500" height="300"
+           controls autoplay loop muted
+           preload="auto"
+           poster="thumbnail.jpg">
+    <!-- width → sets video width -->
+    <!-- height → sets video height -->
+    <!-- controls → shows video controls -->
+    <!-- autoplay → starts video automatically -->
+    <!-- loop → repeats video -->
+    <!-- muted → starts video without sound -->
+    <!-- preload="auto" → loads video before playing -->
+    <!-- poster → shows preview image before video plays -->
+
+        <source src="movie.mp4" type="video/mp4">
+        <!-- Primary video file -->
+
+        <source src="movie.webm" type="video/webm">
+        <!-- Backup video file -->
+
+        Your browser does not support video.
+        <!-- Message if video is not supported -->
+
+    </video>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<html>
+<head>
+    <title>Student Details</title>
+    <style>
+        .myTable {
+            background-color: aqua;
+            font-size: 10px;
+            border-collapse: collapse;
+            padding: 6px;
+        }
+        th {
+        background-color: #cf3939;
+        color: rgb(109, 228, 109);
+        padding: 6px;
+    }
+    </style>
+</head>
+
+<body>
+    <h3>Student Details Table</h3>
+
+    <table class="myTable" border="2">
+        
+        <tr bgcolor="red">
+            <th>Name</th>
+            <th>Age</th>
+            <th colspan="2">Sem &amp; Grade</th>
+        </tr>
+        <tr>
+            <td>Alice</td>
+            <td>20</td>
+            <td>2nd</td>
+            <td rowspan="2" align="center"><b>A+</b></td>
+        </tr>
+         <tr>
+            <td>Hailen</td>
+            <td>22</td>
+            <td>2nd</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">Bob<br>Charlie</td>
+            <td>21</td>
+            <td>2nd</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>19</td>
+            <td>2nd</td>
+            <td>B+</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+<hr><hr><!--*******************************************-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rowspan and Colspan Example</title>
+</head>
+
+<body>
+
+    <table border="2" cellpadding="3" cellspacing="1">
+
+        <tr>
+            <th rowspan="2" bgcolor="lavender">Name</th>
+            <!-- Name heading spans two rows -->
+
+            <th colspan="2" bgcolor="lightpink">Marks</th>
+            <!-- Marks heading spans two columns -->
+        </tr>
+
+        <tr>
+            <th>Maths</th>
+            <th>Science</th>
+        </tr>
+
+        <tr>
+            <td>Amit</td>
+            <td>100</td>
+            <td>95</td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
