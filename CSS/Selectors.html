@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Selectors Example</title>
+
+<style>
+
+/* UNIVERSAL SELECTOR
+   Applies to ALL elements on the page */
+*{
+  margin:0;
+  padding:0;
+  font-family:Arial;
+}
+
+
+/* TAG / ELEMENT SELECTOR
+   Selects all <h1> elements */
+h1{
+  color:blue;
+}
+
+
+/* GROUPING SELECTOR
+   Applies same style to h2 and p elements */
+h2, p{
+  color:darkgreen;
+}
+
+
+/* CLASS SELECTOR
+   Selects elements having class="highlight" */
+.highlight{
+  background-color:yellow;
+  font-weight:bold;
+}
+
+
+/* ID SELECTOR
+   Selects the element with id="header" */
+#header{
+  background-color:lightgray;
+  padding:10px;
+  text-align:center;
+}
+
+
+/* ATTRIBUTE SELECTOR
+   Selects input elements whose type attribute is "text" */
+input[type="text"]{
+  border:2px solid blue;
+  padding:5px;
+}
+
+
+/* PSEUDO-CLASS SELECTOR
+   Changes link color when mouse hovers over it */
+a:hover{
+  color:red;
+}
+
+
+/* PSEUDO-ELEMENT SELECTOR
+   Styles the first letter of paragraphs */
+p::first-letter{
+  font-size:25px;
+  color:rgb(82, 79, 186);
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<div id="header">
+<h1>My Website</h1>
+</div>
+
+<h2>Introduction</h2>
+
+<p>This paragraph shows how CSS selectors work.</p>
+
+<p class="highlight">This paragraph uses the class selector.</p>
+
+<br>
+
+<label>Enter Name:</label>
+<input type="text">
+
+<br><br>
+
+<a href="#">Hover over this link</a>
+
+</body>
+</html>
